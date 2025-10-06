@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .user-info, 
+    .user-info-th,
+    .user-info-td {
+      border: 1px solid black; 
+      border-collapse: collapse;
+    }
+    .user-info-th {
+      background-color: #f2f2f2;
+    }
+
+    .schedule {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .schedule th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .schedule td {
+      text-align: center;
+    }
+    .schedule .zebra{
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
 <body>
-    
+  <h2>My Grocery List</h2>
+  <ul style="list-style-type: square;font-style: italic;color: green;">
+    <li>Apples</li>
+    <li>Milk</li>
+    <li>Bread</li>
+  </ul>
+
+  <h2>User Information</h2>
+  <table class="user-info">
+    <thead>
+      <th class="user-info-th">First Name</th>
+      <th class="user-info-th">Last Name</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="user-info-td">Tanmay</td>
+        <td class="user-info-td">Kumar</td>
+      </tr>
+      <tr>
+        <td class="user-info-td">Priya</td>
+        <td class="user-info-td">Sharma</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Project To-Do List</h2>
+  <ol style="list-style-type: upper-roman;font-style: oblique;">
+    <li style="font-weight: bold;">Phase 1
+      <ul>
+        <li style="background-color: lightyellow;">
+          Design Mockups</li>
+        <li style="background-color: lightyellow;">Create User Stories</li>
+      </ul>
+    </li>
+    <li style="font-weight: bold;">Phase 2</li>
+  </ol>
+  <h2>Weekly Class Schedule</h2>
+  <table class="schedule">
+    <thead>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:00 AM - 10:00 AM</td>
+        <td>Math</td>
+        <td>History</td>
+      </tr>
+      <tr class="zebra">
+        <td>10:00 AM - 11:00 AM</td>
+        <td>Science</td>
+        <td>English</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
